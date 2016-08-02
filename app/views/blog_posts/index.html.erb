@@ -7,10 +7,9 @@
    <div class="col-md-6">
      <div class="panel panel-default">
        <div class="panel-heading">
-           <td><%= link_to blog_post.title, blog_post %></td>
+           <td><%= link_to blog_post.title, blog_post %> - written by <%= blog_post.author %></td>
        </div>
        <div class="panel-body">
-         <td><%= blog_post.author %></td>
          <td><%= blog_post.blog_entry[0..5]%>...<%= link_to "Read more", blog_post%></td>
        </div>
        <div class="panel">
